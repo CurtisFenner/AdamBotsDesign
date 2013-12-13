@@ -43,6 +43,18 @@ p {
     display: block;
 }
 /**************************************
+             CONTENT CSS
+***************************************/
+
+#content {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0 0 10px #000;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+/**************************************
              DROPDOWN CSS
 ***************************************/
 
@@ -80,6 +92,14 @@ Menu items in bar
     font-weight: bold;
     color: white;
     cursor: pointer;
+    transition: 0.2s ease-in;
+    transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease-in;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-out;
 }
 #dropdown nav:hover {
     background: rgba(255, 255, 255, .064);
@@ -94,7 +114,7 @@ Element covering background of #dropdown.
     bottom: 0px;
     right: 0px;
     left: 0px;
-    background: #444;
+    background-color: #444;
     box-shadow: inset 0px 60px 30px -45px #666;
 }
 /*
@@ -130,11 +150,10 @@ All navigation maps
     width: 500px;
     position: relative;
     list-style-type: none;
-    /*
     animation: fadein .5s;
     -moz-animation: fadein .5s;
     -webkit-animation: fadein .5s;
-    -o-animation: fadein .5s; */
+    -o-animation: fadein .5s;
 }
 /*
 Navigation map in the left side
