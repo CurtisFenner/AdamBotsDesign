@@ -1,4 +1,4 @@
-var links = dropdown.getElementsByTagName("div");
+var links = dropdown.getElementsByTagName("nav");
 var active = null;
 
 
