@@ -70,9 +70,10 @@ p {
      border-radius: 10px;
 }
 #social img:hover {
-    background: #ffd802;
-     -moz-border-radius: 10px;
-     border-radius: 10px;
+    /*background: #ffd802;*/
+    background: #333;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 /**************************************
              CONTENT CSS
