@@ -3,14 +3,19 @@
 ***************************************/
 
 body {
+    min-width: 1200px;
     background-color: #494949;
     font-family: "Roboto Condensed";
-    margin: 0px;
+    margin: -5px;
     /*Optional page fadein*/
     animation: fadein .25s;
 	-moz-animation: fadein .25s;
 	-webkit-animation: fadein .25s;
 	-o-animation: fadein .25s;
+}
+em:after{
+    /* fixes slant overlapping letters on condensed font*/
+    content:" ";
 }
 p {
     padding: 0px;
@@ -24,6 +29,16 @@ p {
     width: 1200px;
     margin: auto;
 }
+/**************************************
+              MAIN LAYOUT
+***************************************/
+#gears {
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: -5;
+}
+
 /**************************************
               HEADER CSS
 ***************************************/
@@ -71,9 +86,9 @@ p {
 }
 #social img:hover {
     /*background: #ffd802;*/
-    background: #333;
+    background: rgba(238, 238, 238, .064);
     -moz-border-radius: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 /**************************************
              CONTENT CSS
