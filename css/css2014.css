@@ -4,8 +4,7 @@
 
 body {
     background-color: #494949;
-    font-family: "Roboto";
-    font-weight: 700;
+    font-family: "Roboto Condensed";
     margin: 0px;
     /*Optional page fadein*/
     animation: fadein .25s;
@@ -54,10 +53,26 @@ p {
     float: right;
 }
 #social a {
-    margin: 20px;
+    margin: 5px;
 }
 #social img {
     height: 25px;
+    padding: 10px;
+    transition: 0.2s ease-in;
+    transition: 0.2s ease-out;
+    -webkit-transition: 0.15s ease-in;
+    -webkit-transition: 0.15s ease-out;
+    -moz-transition: 0.15s ease-in;
+    -moz-transition: 0.15s ease-out;
+    -o-transition: 0.15s ease-in;
+    -o-transition: 0.15s ease-out;
+     -moz-border-radius: 10px;
+     border-radius: 10px;
+}
+#social img:hover {
+    background: #ffd802;
+     -moz-border-radius: 10px;
+     border-radius: 10px;
 }
 /**************************************
              CONTENT CSS
@@ -104,8 +119,8 @@ Menu items in bar
     padding-left: 10px;
     padding-right: 10px;
     font-weight: 700;
-    font-size: 25px;
-    color: white;
+    font-size: 22px;
+    color: #eee;
     cursor: pointer;
     transition: 0.2s ease-in;
     transition: 0.2s ease-out;
@@ -117,7 +132,7 @@ Menu items in bar
     -o-transition: 0.2s ease-out;
 }
 #dropdown nav:hover {
-    background: rgba(255, 255, 255, .064);
+    background: rgba(238, 238, 238, .064);
 }
 /*
 Element covering background of #dropdown.
