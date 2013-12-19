@@ -48,7 +48,6 @@ p {
     padding-left: 40px;
 }
 #social {
-    background: red;
     height: inherit;
     margin: 40px;
     position: relative;
@@ -65,8 +64,10 @@ p {
 ***************************************/
 
 #content {
+    clear: both;
     position: relative;
     margin: auto;
+    width: auto;
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
@@ -102,7 +103,8 @@ Menu items in bar
     height: 50px;
     padding-left: 10px;
     padding-right: 10px;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 25px;
     color: white;
     cursor: pointer;
     transition: 0.2s ease-in;
