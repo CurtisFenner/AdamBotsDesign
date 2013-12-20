@@ -30,9 +30,11 @@ p {
     margin: auto;
 }
 /**************************************
-              MAIN LAYOUT
+              BACKGROUND
 ***************************************/
 #gears {
+    width:600px;
+    height:300px;
     left: 0;
     top: 0;
     position: absolute;

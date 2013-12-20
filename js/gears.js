@@ -4,7 +4,8 @@ var roundy = true;	//can be disabled. marks gears thinner, sharper
 
 function drawGears() {
 	c.save();
-	c.clearRect(0,0,1000,300);
+    c.scale(2.0,2.0);
+	c.clearRect(0,0,600,300);
 	c.translate(150,150);
 	c.fillStyle = "#666";			//GEAR COLOR
 	gear(70,100,.2,.5);
@@ -35,9 +36,9 @@ function gear(r1,r2,w,m,off) {
 	c.beginPath();
 	c.moveTo(0,0);
 	var g = (new Date()).getTime() / 100.0 * (m || 1);
-	g = g % (Math.PI*16);
-	g = (g + Math.sin(g)); //stops at n pi , n pi. So we need to divide by 8.
-	g = g / 8; //to stop at (pi/8,pi/8)
+	g = g % (Math.PI*16*6);
+	g = g +  Math.sin(g); //stops at n pi , n pi. So we need to divide by 8.
+	g = g / 6; //to stop at (pi/8,pi/8)
 	for (var i = 0; i <= 4 * 8; i++) {
 		var r = r1;
 		var t = Math.PI*2 * i / 32 + g + (off || 0);
