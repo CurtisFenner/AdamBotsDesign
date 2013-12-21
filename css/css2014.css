@@ -6,7 +6,7 @@ body {
     min-width: 1200px;
     background-color: #494949;
     font-family: "Roboto Condensed";
-    margin: -5px;
+    margin: 0px;
     /*Optional page fadein*/
     animation: fadein .25s;
 	-moz-animation: fadein .25s;
