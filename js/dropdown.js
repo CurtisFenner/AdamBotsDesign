@@ -14,11 +14,11 @@ for (var i = 0; i < links.length; i++) {
 				below.style.display = "block";
 				for (var j = 0; j < links.length; j++) {
 					links[j].style.background = "";
-                    links[j].style.color = "rgba(238,238,238,1)";
+					links[j].style.color = "rgba(238,238,238,1)";
 				}
 				try {
 					el.style.background = "rgba(255,216,2,1)"; //Throws an error in IE8
-                    el.style.color = "rgba(85,85,85,1)"
+					el.style.color = "rgba(85,85,85,1)"
 				} catch (e) {}
 				active = el;
 				clearBelow();
@@ -32,7 +32,7 @@ for (var i = 0; i < links.length; i++) {
 				//below.style.display = "none";
 				for (var j = 0; j < links.length; j++) {
 					links[j].style.background = "";
-                    links[j].style.color = "rgba(238,238,238,1)";
+					links[j].style.color = "rgba(238,238,238,1)";
 				}
 				active = null;
 			}
@@ -49,29 +49,29 @@ var droph = 0;
 
 function dropper() {
 	var t = belowpos.offsetTop;
-		if (!active) {
-			t = 0;
-		}
-		if (t != dend) {
-			dstart = droph;
-			dend = t;
-			dtime = (new Date()).getTime() / 1000.0;
-		}
-		var now = (new Date()).getTime() / 1000.0 - dtime;
-		now = now / (1/60);
-		droph = (dstart - dend) * Math.pow(0.8, now) + dend;
-		if (Math.abs(droph - dend) < 1.5) {
-        	    droph = dend;
-        }
-		belowbox.style.height = Math.floor(droph) + "px";
-	//}
+	if (!active) {
+		t = 0;
+	}
+	if (t != dend) {
+		dstart = droph;
+		dend = t;
+		dtime = (new Date()).getTime() / 1000.0;
+	}
+	var now = (new Date()).getTime() / 1000.0 - dtime;
+	now = now / (1/60);
+	droph = (dstart - dend) * Math.pow(0.8, now) + dend;
+	if (Math.abs(droph - dend) < 1.5) {
+			droph = dend;
+	}
+	belowbox.style.height = Math.floor(droph) + "px";
 
-	if (requestAnimationFrame)
+	if (window.requestAnimationFrame) {
 		requestAnimationFrame(dropper);
+	}
 }
 
-if (!!!requestAnimationFrame) {
+if (!!!window.requestAnimationFrame) {
 	setInterval(dropper,1000/60);
 } else {
-dropper();
+	dropper();
 }
