@@ -9,13 +9,13 @@ body {
     margin: 0px;
     /*Optional page fadein*/
     animation: fadein .25s;
-	-moz-animation: fadein .25s;
-	-webkit-animation: fadein .25s;
-	-o-animation: fadein .25s;
+    -moz-animation: fadein .25s;
+    -webkit-animation: fadein .25s;
+    -o-animation: fadein .25s;
 }
-em:after{
+em:after {
     /* fixes slant overlapping letters on condensed font*/
-    content:" ";
+    content: " ";
 }
 p {
     padding: 0px;
@@ -26,21 +26,22 @@ p {
 ***************************************/
 
 .pagecenter {
-    width: 1200px;
-    margin: auto;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 /**************************************
               BACKGROUND
 ***************************************/
+
 #gears {
-    width:600px;
-    height:300px;
+    width: 600px;
+    height: 300px;
     left: 0;
     top: 0;
     position: absolute;
     z-index: -5;
 }
-
 /**************************************
               HEADER CSS
 ***************************************/
@@ -83,8 +84,8 @@ p {
     -moz-transition: 0.15s ease-out;
     -o-transition: 0.15s ease-in;
     -o-transition: 0.15s ease-out;
-     -moz-border-radius: 10px;
-     border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 #social img:hover {
     /*background: #ffd802;*/
@@ -193,7 +194,7 @@ All navigation maps
 */
 
 #below ul {
-    width: 500px;
+    width: 400px;
     position: relative;
     list-style-type: none;
     animation: fadein .5s;
@@ -234,6 +235,10 @@ Lines in navigation.
     position: relative;
     line-height: 35px;
     font-weight: bold;
+    overflow: hidden;
+}
+#below ul li:hover {
+    left:100px;
 }
 /*
 Descriptions in navigation.
@@ -241,8 +246,6 @@ Descriptions in navigation.
 
 #below ul li span {
     color: #494949;
-    position: absolute;
-    right: 16px;
     top: 0px;
     font-weight: normal;
 }
@@ -253,6 +256,18 @@ Anchors in navigation
 #below ul li a {
     color: #494949;
     text-decoration: none;
+    position: absolute;
+    -webkit-animation: fadein 0.5s;
+    animation: fadein 0.5s;
+    left: -100px;
+}
+/*
+Holds sliding descriptions
+*/
+
+#slide_container {
+    overflow: hidden;
+    width: inherit;
 }
 /* Define CSS fade-in */
 
