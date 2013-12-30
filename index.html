@@ -28,7 +28,7 @@
     <div id="content">
         <div id="dropdown">
             <span id="dropdownbackground"></span>
-            <div class="pagecenter">
+            <div class="pagewidth">
                 <nav>
                     <span>The AdamBots
                         <em></em>
@@ -283,11 +283,11 @@
                 </nav>
 
             </div>
-            <!-- <- .pagecenter -->
+            <!-- <- .pagewidth -->
 
         </div>
         <div id="belowbox">
-            <div class="pagecenter">
+            <div class="pagewidth">
                 <div id="below">
                 </div>
             </div>
@@ -295,83 +295,35 @@
         </div>
 
         <script type="text/javascript" src="js/dropdown.js"></script>
-
-        <!--
-<div id="wrap">
-<div id="gallery" style="width:640px;height:480px;">
-	<img id="galleryimg" height="480" width="640">
-	<img id="galleryold" height="480" width="640">
-</div>
-</div>
-
-<script>
-var ptime = 0;
-	galleryimg.src = "http://www.adambots.com/wp-content/uploads/2013/02/Untitled.jpg";
-	galleryold.src ="http://www.adambots.com/wp-content/uploads/2013/04/164216_426894024067883_27040720_n1-570x438.jpg";
-function anim() {
-	//http://www.adambots.com/wp-content/uploads/2013/04/164216_426894024067883_27040720_n1-570x438.jpg
-	//http://www.adambots.com/wp-content/uploads/2013/02/Untitled.jpg
-	//gallery.style.background = "url(" + "" + ")";
-	var f = (new Date()).getTime();
-
-
-	f = f % 4000;
-	if (f < ptime) {
-		//Move forward in presentation
-		var s = galleryold.src;
-		galleryold.src = galleryimg.src;
-		galleryimg.src = s;
-	}
-	ptime = f;
-
-	if (f < 1000) {
-		galleryold.style.opacity = 1 - (f % 1000) / 1000;
-		galleryold.style.webkitFilter = "blur(" + Math.floor(f / 30) + "px)";
-		galleryimg.style.webkitFilter = "blur(" + (1000/30 - Math.floor(f / 30)) + "px)";
-	} else {
-		galleryold.style.opacity = 0;
-		galleryold.style.webkitFilter = "blur(0px)";
-		galleryimg.style.webkitFilter = "blur(0px)";
-	}
-	requestAnimationFrame(anim);
-}
-anim();
-</script>
-
--->
-<!--        <div style="text-indent:.5in;background:#55BB88;color:white; padding:.5in;">
-
-
-
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis convallis velit, eget imperdiet enim. In accumsan vel diam at imperdiet. Cras elementum diam venenatis pellentesque elementum. Nunc at est egestas, ornare neque ut, egestas quam. Duis dui massa, venenatis ac neque a, porttitor sollicitudin ante. Nulla convallis lobortis leo, sed euismod velit congue sit amet. Sed volutpat risus in dui ultrices luctus ut sed sapien. Donec pretium pulvinar dictum. Aliquam mauris massa, rhoncus a lacinia sit amet, vestibulum sed purus. Donec at diam mi. Duis sit amet pretium justo. Praesent quis ipsum dolor. Aliquam fermentum odio ante, vitae rhoncus turpis ultrices sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus porta, nulla sed tincidunt egestas, dolor tortor aliquam elit, eu luctus arcu nisi eget nisl. Sed ut fermentum turpis.
+        <div style="text-indent:.5in;background:#55BB88;color:white; padding:.5in;">
+            <div class="pagewidth">
                 <p>
-                    Aliquam vel nisi nunc. Donec pretium nulla in turpis vehicula, et aliquet erat suscipit. Ut dictum vulputate cursus. Nam quis nisi in ipsum varius dignissim ac eget dui. Duis leo nunc, lacinia et gravida aliquet, convallis ac tortor. Quisque eu lectus nisl. Phasellus dapibus at ipsum ut tincidunt. Integer varius, lectus et egestas egestas, lectus enim molestie odio, id bibendum erat ipsum sit amet tellus. Nam rutrum facilisis magna eget dapibus. Vestibulum ac justo a risus pretium dignissim. Pellentesque at imperdiet augue. Vivamus sapien tortor, tristique id tristique vel, elementum ac augue.
-                    <p>
-                        Donec vulputate tincidunt urna, vel consequat diam eleifend in. Phasellus non interdum felis, ac fringilla arcu. Integer vitae velit accumsan, molestie turpis vel, blandit magna. In sit amet enim id ligula auctor mattis. Cras blandit euismod interdum. Nullam aliquam sem ac neque condimentum ultrices. Quisque posuere blandit nunc, id viverra erat placerat sed. Etiam lacus lorem, tempor id felis ac, pellentesque vestibulum felis.
-                        <p>
-                            Curabitur vestibulum vitae purus ac eleifend. Donec pulvinar turpis ut lacinia laoreet. Cras varius leo sed eros molestie elementum a nec lorem. Aliquam erat volutpat. Ut porttitor pulvinar urna, imperdiet dapibus tellus tempor eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque congue nisi quis ligula facilisis feugiat. In bibendum, nulla sed varius suscipit, mi metus ultricies risus, at pellentesque sem libero id tortor. Quisque luctus euismod ante, at dapibus erat aliquam at. Suspendisse mollis elementum tellus sed placerat. Aenean ornare elementum eros, quis mattis neque semper et. Sed fermentum, velit non imperdiet pretium, nisi risus ultricies tortor, eget posuere turpis justo nec quam. Phasellus diam odio, molestie non iaculis porttitor, scelerisque sed tortor. Integer dapibus, felis vitae consequat imperdiet, ante mi pretium orci, eget lobortis urna nulla eget enim.
-                            <p>
-                                Phasellus sagittis viverra facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla libero vulputate diam aliquet, quis faucibus sapien aliquet. Nullam imperdiet pellentesque massa et hendrerit. Cras ut aliquam tortor. Ut adipiscing risus a eros pellentesque, vitae eleifend nulla aliquet. Vestibulum adipiscing ultrices ipsum ut aliquet. Nunc ut enim sit amet leo dapibus semper. Curabitur interdum ut orci in ultricies. Nunc velit turpis, vulputate non arcu vel, porttitor iaculis lorem. Sed nunc ipsum, sollicitudin id odio sit amet, tincidunt egestas ligula. Vivamus id purus sit amet dolor bibendum gravida.
-        </div> -->
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis convallis velit, eget imperdiet enim. In accumsan vel diam at imperdiet. Cras elementum diam venenatis pellentesque elementum. Nunc at est egestas, ornare neque ut, egestas quam. Duis dui massa, venenatis ac neque a, porttitor sollicitudin ante. Nulla convallis lobortis leo, sed euismod velit congue sit amet. Sed volutpat risus in dui ultrices luctus ut sed sapien. Donec pretium pulvinar dictum. Aliquam mauris massa, rhoncus a lacinia sit amet, vestibulum sed purus. Donec at diam mi. Duis sit amet pretium justo. Praesent quis ipsum dolor. Aliquam fermentum odio ante, vitae rhoncus turpis ultrices sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus porta, nulla sed tincidunt egestas, dolor tortor aliquam elit, eu luctus arcu nisi eget nisl. Sed ut fermentum turpis.</p>
+                <p>
+                    Aliquam vel nisi nunc. Donec pretium nulla in turpis vehicula, et aliquet erat suscipit. Ut dictum vulputate cursus. Nam quis nisi in ipsum varius dignissim ac eget dui. Duis leo nunc, lacinia et gravida aliquet, convallis ac tortor. Quisque eu lectus nisl. Phasellus dapibus at ipsum ut tincidunt. Integer varius, lectus et egestas egestas, lectus enim molestie odio, id bibendum erat ipsum sit amet tellus. Nam rutrum facilisis magna eget dapibus. Vestibulum ac justo a risus pretium dignissim. Pellentesque at imperdiet augue. Vivamus sapien tortor, tristique id tristique vel, elementum ac augue.</p>
+                <p>
+                    Donec vulputate tincidunt urna, vel consequat diam eleifend in. Phasellus non interdum felis, ac fringilla arcu. Integer vitae velit accumsan, molestie turpis vel, blandit magna. In sit amet enim id ligula auctor mattis. Cras blandit euismod interdum. Nullam aliquam sem ac neque condimentum ultrices. Quisque posuere blandit nunc, id viverra erat placerat sed. Etiam lacus lorem, tempor id felis ac, pellentesque vestibulum felis.</p>
+                <p>
+                    Curabitur vestibulum vitae purus ac eleifend. Donec pulvinar turpis ut lacinia laoreet. Cras varius leo sed eros molestie elementum a nec lorem. Aliquam erat volutpat. Ut porttitor pulvinar urna, imperdiet dapibus tellus tempor eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque congue nisi quis ligula facilisis feugiat. In bibendum, nulla sed varius suscipit, mi metus ultricies risus, at pellentesque sem libero id tortor. Quisque luctus euismod ante, at dapibus erat aliquam at. Suspendisse mollis elementum tellus sed placerat. Aenean ornare elementum eros, quis mattis neque semper et. Sed fermentum, velit non imperdiet pretium, nisi risus ultricies tortor, eget posuere turpis justo nec quam. Phasellus diam odio, molestie non iaculis porttitor, scelerisque sed tortor. Integer dapibus, felis vitae consequat imperdiet, ante mi pretium orci, eget lobortis urna nulla eget enim.</p>
+                <p>
+                    Phasellus sagittis viverra facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla libero vulputate diam aliquet, quis faucibus sapien aliquet. Nullam imperdiet pellentesque massa et hendrerit. Cras ut aliquam tortor. Ut adipiscing risus a eros pellentesque, vitae eleifend nulla aliquet. Vestibulum adipiscing ultrices ipsum ut aliquet. Nunc ut enim sit amet leo dapibus semper. Curabitur interdum ut orci in ultricies. Nunc velit turpis, vulputate non arcu vel, porttitor iaculis lorem. Sed nunc ipsum, sollicitudin id odio sit amet, tincidunt egestas ligula. Vivamus id purus sit amet dolor bibendum gravida.</p>
+            </div>
+        </div>
     </div>
 
 <div class="panelgrid"> <!-- This is the div below the slider -->
-    <div>
+    <div class="pagewidth">
+        <div class="centerpanel" style="background:#EEE;left:320px;">
+            <img style="width:300px;margin:10px;" src="sponsors.png"/>
+            <h3><a href="#">Our Sponsors: <em>Thank you so much!</em></a></h3>
+        </div>
         <div>
-            <div class="centerpanel" style="background:#EEE;left:320px;">
-                <img style="width:300px;margin:10px;" src="sponsors.png"/>
-                <h3><a href="#">Our Sponsors: <em>Thank you so much!</em></a></h3>
-            </div>
-            <div>
-                <img style="width:300px;margin:10px;" width=300 src="FIRST Logo.png"/>
-                <h3><a href="#"><em>For Inspiration and Recognition of Science and Technology</em></a></h3>
-            </div>
-            <div style="left:640px">
-                <img style="width:300px;margin:10px;" src="Ultimate Ascent Logo.png"/>
-                <h3 style="margin-top:0px"><a href="#">2013 FRC Game:<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Ultimate Ascent</em></a></h3>
-            </div>
+            <img style="width:300px;margin:10px;" width=300 src="FIRST Logo.png"/>
+            <h3><a href="#"><em>For Inspiration and Recognition of Science and Technology</em></a></h3>
+        </div>
+        <div style="left:640px">
+            <img style="width:300px;margin:10px;" src="Ultimate Ascent Logo.png"/>
+            <h3 style="margin-top:0px"><a href="#">2013 FRC Game:<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Ultimate Ascent</em></a></h3>
         </div>
     </div>
 </div>

@@ -1,119 +1,122 @@
 /**************************************
-            GENERIC ELEMENTS
+			GENERIC ELEMENTS
 ***************************************/
 
 body {
-    min-width: 1200px;
-    background-color: #494949;
-    font-family: "Roboto Condensed";
-    margin: 0px;
-    /*Optional page fadein*/
-    animation: fadein .25s;
-    -moz-animation: fadein .25s;
-    -webkit-animation: fadein .25s;
-    -o-animation: fadein .25s;
+	min-width: 1200px;
+	background-color: #494949;
+	font-family: "Roboto Condensed";
+	margin: 0px;
+	/*Optional page fadein*/
+	animation: fadein .25s;
+	-moz-animation: fadein .25s;
+	-webkit-animation: fadein .25s;
+	-o-animation: fadein .25s;
 }
 
 em:after {
-    /* fixes slant overlapping letters on condensed font*/
-    content: " ";
+	/* fixes slant overlapping letters on condensed font*/
+	content: " ";
 }
 
 p {
-    padding: 0px;
-    margin: 0px;
+	padding: 0px;
+	margin: 0px;
 }
 
 a {
-    text-decoration:none;
+	text-decoration:none;
 }
 
 /**************************************
-              MAIN LAYOUT
+			  MAIN LAYOUT
 ***************************************/
 
-.pagecenter {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+.pagewidth {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	position:relative;
 }
+
 /**************************************
-              BACKGROUND
+			  BACKGROUND
 ***************************************/
 
 #gears {
-    width: 600px;
-    height: 300px;
-    left: 0;
-    top: 0;
-    position: absolute;
-    z-index: -5;
+	width: 600px;
+	height: 300px;
+	left: 0;
+	top: 0;
+	position: absolute;
+	z-index: -5;
 }
 /**************************************
-              HEADER CSS
+			  HEADER CSS
 ***************************************/
 
 #head {
-    height: 120px;
-    margin: 25px;
-    margin-left: 50px;
+	height: 120px;
+	margin: 25px;
+	margin-left: 50px;
 }
 #atom {
-    height: inherit;
-    position: relative;
-    float: left;
+	height: inherit;
+	position: relative;
+	float: left;
 }
 #name {
-    float: left;
-    color: #eee;
-    font-family: "SF Sports Night NS";
-    font-size: 70px;
-    padding-top: 35px;
-    padding-left: 40px;
+	float: left;
+	color: #eee;
+	font-family: "SF Sports Night NS";
+	font-size: 70px;
+	padding-top: 35px;
+	padding-left: 40px;
 }
 #social {
-    height: inherit;
-    margin: 40px;
-    position: relative;
-    float: right;
+	height: inherit;
+	margin: 40px;
+	position: relative;
+	float: right;
 }
 #social a {
-    margin: 5px;
+	margin: 5px;
 }
 #social img {
-    height: 25px;
-    padding: 10px;
-    transition: 0.2s ease-in;
-    transition: 0.2s ease-out;
-    -webkit-transition: 0.15s ease-in;
-    -webkit-transition: 0.15s ease-out;
-    -moz-transition: 0.15s ease-in;
-    -moz-transition: 0.15s ease-out;
-    -o-transition: 0.15s ease-in;
-    -o-transition: 0.15s ease-out;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+	height: 25px;
+	padding: 10px;
+	transition: 0.2s ease-in;
+	transition: 0.2s ease-out;
+	-webkit-transition: 0.15s ease-in;
+	-webkit-transition: 0.15s ease-out;
+	-moz-transition: 0.15s ease-in;
+	-moz-transition: 0.15s ease-out;
+	-o-transition: 0.15s ease-in;
+	-o-transition: 0.15s ease-out;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 }
 #social img:hover {
-    /*background: #ffd802;*/
-    background: rgba(238, 238, 238, .064);
-    -moz-border-radius: 10px;
-    border-radius: 5px;
+	/*background: #ffd802;*/
+	background: rgba(238, 238, 238, .064);
+	-moz-border-radius: 10px;
+	border-radius: 5px;
 }
 /**************************************
-             CONTENT CSS
+			 CONTENT CSS
 ***************************************/
 
 #content {
-    clear: both;
-    position: relative;
-    margin: auto;
-    width: auto;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+	clear: both;
+	position: relative;
+	margin: auto;
+	width: auto;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 }
+
 /**************************************
-             DROPDOWN CSS
+			 DROPDOWN CSS
 ***************************************/
 
 /*
@@ -121,246 +124,243 @@ Bar containing menu items.
 */
 
 #dropdown {
-    position: relative;
-    left: 0px;
-    right: 0px;
-    height: 50px;
-    padding-left: 20px;
-    line-height: 50px;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+	position: relative;
+	left: 0px;
+	right: 0px;
+	height: 50px;
+	padding-left: 20px;
+	line-height: 50px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 /*
 Menu items in bar
 */
 
 #dropdown nav {
-    display: inline-block;
-    position: relative;
-    height: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight: 700;
-    font-size: 22px;
-    color: #eee;
-    cursor: pointer;
-    transition: 0.2s ease-in;
-    transition: 0.2s ease-out;
-    -webkit-transition: 0.2s ease-in;
-    -webkit-transition: 0.2s ease-out;
-    -moz-transition: 0.2s ease-in;
-    -moz-transition: 0.2s ease-out;
-    -o-transition: 0.2s ease-in;
-    -o-transition: 0.2s ease-out;
+	display: inline-block;
+	position: relative;
+	height: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: 700;
+	font-size: 22px;
+	color: #eee;
+	cursor: pointer;
+	transition: 0.2s ease-in;
+	transition: 0.2s ease-out;
+	-webkit-transition: 0.2s ease-in;
+	-webkit-transition: 0.2s ease-out;
+	-moz-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-out;
+	-o-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-out;
 }
 #dropdown nav:hover {
-    background: rgba(238, 238, 238, .064);
+	background: rgba(238, 238, 238, .064);
 }
 /*
 Element covering background of #dropdown.
 */
 
 #dropdownbackground {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
 }
 /*
 Where the navigation elements are stored on the page.
 */
 
 #dropdown nav ul {
-    display: none;
+	display: none;
 }
 /*
 Div containing #below for the purpose of resizing up and down.
 */
 
 #belowbox {
-    position: relative;
-    overflow: hidden;
-    background: #ffd802;
-    /*box-shadow: inset 0px 66px 10px -55px #333, inset 0px -30px 30px -15px #353535;*/
+	position: relative;
+	overflow: hidden;
+	background: #ffd802;
+	/*box-shadow: inset 0px 66px 10px -55px #333, inset 0px -30px 30px -15px #353535;*/
 }
 /*
 Div containing navigation links in two UL's, ul.left and ul.right.
 */
 
 #below {
-    position: relative;
-    color: white;
+	position: relative;
+	color: white;
 }
 /*
 All navigation maps
 */
 
 #below ul {
-    width: 400px;
-    position: relative;
-    list-style-type: none;
-    animation: fadein .5s;
-    -moz-animation: fadein .5s;
-    -webkit-animation: fadein .5s;
-    -o-animation: fadein .5s;
+	width: 400px;
+	position: relative;
+	list-style-type: none;
+	animation: fadein .5s;
+	-moz-animation: fadein .5s;
+	-webkit-animation: fadein .5s;
+	-o-animation: fadein .5s;
 }
 /*
 Navigation map in the left side
 */
 
 #below ul.left {
-    float: left;
+	float: left;
 }
 /*
 Navigation map on the right side
 */
 
 #below ul.right {
-    float: left;
+	float: left;
 }
 /*
 The navigation headings in the dropdown box.
 */
 
 #below ul li h3 {
-    width: 100%;
-    border-bottom: 1px solid gray;
-    margin-top: 0px;
-    margin-bottom: 5px;
+	width: 100%;
+	border-bottom: 1px solid gray;
+	margin-top: 0px;
+	margin-bottom: 5px;
 }
 /*
 Lines in navigation.
 */
 
 #below ul li {
-    color: #494949;
-    position: relative;
-    line-height: 35px;
-    font-weight: bold;
-    overflow: hidden;
+	color: #494949;
+	position: relative;
+	line-height: 35px;
+	font-weight: bold;
+	overflow: hidden;
 }
 #below ul li:hover {
-    left:100px;
+	left:100px;
 }
 /*
 Descriptions in navigation.
 */
 
 #below ul li span {
-    color: #494949;
-    top: 0px;
-    font-weight: normal;
+	color: #494949;
+	top: 0px;
+	font-weight: normal;
 }
 /*
 Anchors in navigation
 */
 
 #below ul li a {
-    color: #494949;
-    text-decoration: none;
-    position: absolute;
-    -webkit-animation: fadein 0.5s;
-    animation: fadein 0.5s;
-    left: -100px;
+	color: #494949;
+	text-decoration: none;
+	position: absolute;
+	-webkit-animation: fadein 0.5s;
+	animation: fadein 0.5s;
+	left: -100px;
 }
 
+
+/**************************************
+			   PANEL CSS
+***************************************/
 /*
 Triple panel display above footer
 */
 
 .panelgrid {
-    overflow:hidden;
-    left:0px;
-    right:0px;
-    position:relative;
-    margin-top:500px;
-    height:400px;
-}
-.panelgrid > div {
-    position:relative;
-    left:50%;
-    width:0;
+	overflow:hidden;
+	left:0px;
+	right:0px;
+	position:relative;
+	margin-top:500px;
+	height:400px;
 }
 
-.panelgrid > div > div {
-    position:absolute;
-    top:0px;
-    left:-480px;
-    width:960px;
-    height:400px;
+.panelgrid .pagewidth {
+	height:400px;
 }
 
-.panelgrid > div > div > div {
-    top:0px;
-    left:0px;
-    width:320px;
-    height:400px;
-    background:#FFF;
-    text-align:justify;
-    box-shadow:0 0 9px 5px rgba(0,0,0,0.25);
-    position:absolute;
+.panelgrid .pagewidth > div {
+	top:0px;
+	left:0px;
+	width:320px;
+	height:400px;
+	background:#FFF;
+	text-align:justify;
+	box-shadow:0 0 9px 5px rgba(0,0,0,0.25);
+	position:absolute;
 }
 
 .panelgrid h3 {
-    margin: 20px;
-    border-bottom: 3px solid #0056A3;
+	margin: 20px;
+	border-bottom: 3px solid #0056A3;
 }
 .panelgrid a {
-    color:#0066B3;
+	color:#0066B3;
 }
 
 .centerpanel {
-    top:0px;
-    background:#EEE;
-    box-shadow: none;
+	top:0px;
+	background:#EEE;
+	box-shadow: none;
 }
 
 
-
+/**************************************
+		  SLIDING ANIMATION
+***************************************/
 /*
 Holds sliding descriptions
 */
 
 #slide_container {
-    overflow: hidden;
-    width: inherit;
+	overflow: hidden;
+	width: inherit;
 }
 /* Define CSS fade-in */
 
 @keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 @-moz-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 @-webkit-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 @-o-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
