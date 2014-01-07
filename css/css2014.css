@@ -16,6 +16,9 @@ body {
 	-moz-animation: fadein .25s;
 	-webkit-animation: fadein .25s;
 	-o-animation: fadein .25s;
+    
+    background-image: url('../res/img/noise.png');
+    background-size: 1000px;
 }
 
 em:after {
@@ -37,11 +40,13 @@ a {
 ***************************************/
 
 #gallerybox {
-	height:600px;
+	height:400px;
 	position:relative;
-	width:800px;
+	width:960px;
 	margin:auto;
-	overflow:hidden;
+    overflow: hidden;
+    box-shadow: 0 0 10px #111;
+    margin-top: 25px;
 }
 
 #galleryleft,#galleryright {
@@ -49,14 +54,14 @@ a {
 	position:absolute;
 	width:100%;
 	top:0px;
-	background-size:800px 600px;
+	background-size: 100%;
 	background-repeat:no-repeat;
 }
 
 
 #gallerybuttonleft, #gallerybuttonright {
 	position:absolute;
-	top:310px;
+	top:180px;
 	cursor:pointer;
 
 	width:0px;
@@ -327,9 +332,6 @@ Lines in navigation.
 	font-weight: bold;
 	overflow: hidden;
 }
-#below ul li:hover {
-	left:100px;
-}
 /*
 Descriptions in navigation.
 */
@@ -338,6 +340,8 @@ Descriptions in navigation.
 	color: #494949;
 	top: 0px;
 	font-weight: normal;
+    position: absolute;
+    right: 0;
 }
 /*
 Anchors in navigation
@@ -346,10 +350,8 @@ Anchors in navigation
 #below ul li a {
 	color: #494949;
 	text-decoration: none;
-	position: absolute;
 	-webkit-animation: fadein 0.5s;
 	animation: fadein 0.5s;
-	left: -100px;
 }
 
 
@@ -398,6 +400,18 @@ Triple panel display above footer
 	box-shadow: none;
 }
 
+/**************************************
+		      BODY CARDS
+***************************************/
+#teaminfo {
+    width: 960px;
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    background-color: #ffd802;
+    box-shadow: 0 0 10px #111;
+}
 
 /**************************************
 		  SLIDING ANIMATION
