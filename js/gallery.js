@@ -12,7 +12,7 @@ text:"The AdamBots were champions at the Palmetto regional in Myrtle Beach, Sout
 title:"The 2014 AdamBots FRC Team",
 text:"Our team of seventy students from Rochester Adams and Stoney Creek High Schools"
 },
-{url:"http://www.adambots.com/wp-content/gallery/2013-build-season-week-1/design23.jpg",title:"WOW",text:"SO DOGE"}
+{url:"../res/img/team.jpg",title:"WOW",text:"SO DOGE"}
 ];
 
 gx = -gallery.length * 1000;
