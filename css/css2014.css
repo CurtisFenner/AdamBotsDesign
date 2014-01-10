@@ -8,7 +8,8 @@ h3 {
 
 body {
 	min-width: 1200px;
-	background-color: #494949;
+	/* Was 494949, considered "bland" "too light" */
+	background-color: #111;
 	font-family: "Roboto Condensed";
 	margin: 0px;
 	/*Optional page fadein*/
@@ -17,8 +18,8 @@ body {
 	-webkit-animation: fadein .25s;
 	-o-animation: fadein .25s;
     
-    background-image: url('../res/img/noise.png');
-    background-size: 1000px;
+    /*background-image: url('../res/img/noise.png');*/
+	background-image:url("../res/img/noisy.png");
 }
 
 em:after {
@@ -36,6 +37,32 @@ a {
 }
 
 /**************************************
+		         GEARS
+***************************************/
+
+#gears {
+	background:#111;
+}
+
+#gearscontainer {
+	position:absolute;
+	margin:0px;
+	width:600px;
+	height:300px;
+	z-index:-5;
+	top:0px;
+}
+
+#gearscover {
+	background:url("../res/img/noisy.png");
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+}
+
+/**************************************
 		   IMAGE GALLERY
 ***************************************/
 
@@ -45,6 +72,8 @@ a {
 	width:960px;
 	margin:auto;
     overflow: hidden;
+	box-shadow:0px 0px 5px 5px rgba(0,0,0,.5);
+	margin-top:20px;
 }
 
 #galleryleft,#galleryright {
@@ -55,7 +84,6 @@ a {
 	background-size: 100%;
 	background-repeat:no-repeat;
 }
-
 
 #gallerybuttonleft, #gallerybuttonright {
 	position:absolute;
@@ -69,7 +97,6 @@ a {
 	border-bottom:29px solid transparent;
 }
 
-
 #gallerybuttonleft {
 	left:20px;
 	border-left:0px solid black;
@@ -79,7 +106,6 @@ a {
 #gallerybuttonleft:hover {
 	border-right:50px solid rgba(255,255,255,.5);
 }
-
 
 #gallerybuttonright {
 	right:20px;
@@ -176,6 +202,7 @@ a {
 	-moz-transition: 0.15s ease-out;
 	-o-transition: 0.15s ease-in;
 	-o-transition: 0.15s ease-out;
+	border:none;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 }
@@ -315,7 +342,7 @@ The navigation headings in the dropdown box.
 
 #below ul li h3 {
 	width: 100%;
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid #111;
 	margin-top: 0px;
 	margin-bottom: 5px;
 }
@@ -324,7 +351,7 @@ Lines in navigation.
 */
 
 #below ul li {
-	color: #494949;
+	color: #111;
 	position: relative;
 	line-height: 35px;
 	font-weight: bold;
@@ -335,7 +362,7 @@ Descriptions in navigation.
 */
 
 #below ul li span {
-	color: #494949;
+	color: #111;
 	top: 0px;
 	font-weight: normal;
     position: absolute;
@@ -346,7 +373,7 @@ Anchors in navigation
 */
 
 #below ul li a {
-	color: #494949;
+	color: #111;
 	text-decoration: none;
 	-webkit-animation: fadein 0.5s;
 	animation: fadein 0.5s;

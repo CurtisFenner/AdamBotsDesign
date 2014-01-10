@@ -2,12 +2,15 @@ var c = gears.getContext("2d");
 
 var roundy = true;	//can be disabled. marks gears thinner, sharper
 
+var nimg = new Image();
+nimg.src = "res/img/noisy.png";
+
 function drawGears() {
 	c.save();
     c.scale(2.0,2.0);
 	c.clearRect(0,0,600,300);
 	c.translate(150,150);
-	c.fillStyle = "#666";			//GEAR COLOR
+	c.fillStyle = "#2A2A2A";			//GEAR COLOR
 	gear(70,100,.2,.5);
 	var dx = 2;
 	var dy = -1;
@@ -22,7 +25,7 @@ function drawGears() {
 
 	c.translate(dx*(dis+pad),dy*(dis+pad));
 	gear(dis-70-30, dis-70,.2,-.5,  .515 );
-	c.fillStyle = "#494949";
+	c.fillStyle = "#111";
 	c.beginPath();
 	c.arc(0,0,50,0,Math.PI*2);
 	c.moveTo(-dx*dis,-dy*dis);
