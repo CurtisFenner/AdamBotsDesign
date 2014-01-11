@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "SF Sports Night NS", sans-serif;
-    src: local("SFSportsNightNS.ttf") format("opentype");
+    font-family: "SF Sports Night NS";
+    src: local("SF Sports Night NS") , url("../fonts/SFSportsNightNS.ttf");
 }
 @font-face {
     font-family: "Roboto Condensed", sans-serif;
